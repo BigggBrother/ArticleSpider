@@ -65,7 +65,9 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'ArticleSpider.pipelines.ArticlespiderPipeline': 1,
+   # 'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
+   # 'ArticleSpider.pipelines.ArticleImagePipline':1,
+   'ArticleSpider.pipelines.MysqlPipeline':1,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
